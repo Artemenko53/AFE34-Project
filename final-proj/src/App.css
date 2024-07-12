@@ -1,35 +1,60 @@
+:root {
+  --gray: rgb(170, 170, 170);
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
 body {
   text-align: center;
   background-color: #1f1f1f;
   height: 100vh;
-  font-family: "Nunito", sans-serif;
   color: whitesmoke;
   scroll-behavior: smooth;
 }
 
-.base {
+a {
+  color: var(--gray);
+}
+
+header {
+  padding: 20px;
+}
+
+header,
+.Logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.jokeInput {
-  width: 500px;
-  height: 300px;
-  font-size: 50px;
-  font-family: "Nunito", sans-serif;
-  text-align: center;
-  outline: none;
+  margin-bottom: 30px;
 }
 
 .search {
+  width: 200px;
+  height: 100px;
   margin-top: 20px;
   border: none;
   border-radius: 8px;
+  background-color: rgb(246, 255, 0);
+  transition: all 0.3s;
 }
 
-.legal,
-.legal a {
-  color: rgb(154, 154, 154);
+.search:hover {
+  background-color: rgb(180, 0, 240);
+  color: white;
+  transform: scale(1.1);
+}
+
+.legal {
+  color: var(--gray);
 }
