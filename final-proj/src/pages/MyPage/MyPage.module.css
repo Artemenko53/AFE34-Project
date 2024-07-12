@@ -1,0 +1,23 @@
+.name {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgb(246, 255, 0);
+  color: black;
+}
+
+.bio {
+  border-radius: 8px;
+  padding: 20px;
+  background-color: rgb(107, 107, 107);
+  font-size: 23px;
+}
+
+.bio_wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.bio_wrapper img {
+  border-radius: 8px;
+}

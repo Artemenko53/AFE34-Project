@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import { fetchJoke } from "./api";
-import "./App.css";
-
+import { fetchJoke } from "../../api";
+import css from "./JokerPage.module.css";
 const Jokes = () => {
   const [joke, setJoke] = useState("");
 
@@ -15,11 +14,12 @@ const Jokes = () => {
   }, []);
 
   return (
-    <div className="joke-container">
-      <div className="joke-content">
+    <div className={css.joke_container}>
+      <h1>Hello! Click on button to get a joke!</h1>
+      <div className={css.joke_content}>
         <p>{joke}</p>
       </div>
-      <button type="button" className="search" onClick={getJoke}>
+      <button type="button" className={css.search} onClick={getJoke}>
         Search a joke
       </button>
     </div>
